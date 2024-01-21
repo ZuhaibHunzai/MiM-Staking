@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Header } from "./header";
 import { useStake } from "../helpers/stakeHelper";
-import { getContract, parseEther } from "viem";
 import { STACKING_ADDRESS, ERC20_ADDRESS } from "../assests/adresses";
 import ABI_STAKING from "../assests/abi/stackingAbi.json";
 import { useAccount, usePublicClient, useWalletClient } from "wagmi";
@@ -244,7 +243,7 @@ const Spot = () => {
           <form onSubmit={handleSubmit}>
             <div>
               <input
-                type="number"
+                type="text"
                 placeholder="enter amount"
                 onChange={(e) => {
                   setAmount(e.target.value);

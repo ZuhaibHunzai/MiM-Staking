@@ -1,7 +1,7 @@
 import { MetaMaskConnector } from "wagmi/connectors/metaMask";
 import { WalletConnectConnector } from "wagmi/connectors/walletConnect";
 import { createPublicClient, http } from "viem";
-import { WagmiConfig, createConfig, mainnet } from "wagmi";
+import { WagmiConfig, createConfig } from "wagmi";
 import { goerli } from "wagmi/chains";
 
 export const chains = [goerli];
